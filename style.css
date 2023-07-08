@@ -1,0 +1,269 @@
+@import url(./common.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#5DA9E9;
+    --bgDark : rgb(12,12,12);
+    --white : rgb(250,250,250);
+    --secondary:rgb(0,59,50);
+    --bgLight:rgb(190,181,181);
+}
+/* Header style */
+#header{
+    background-color: var(--bgDark);
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav{
+    padding: 2rem 0rem;
+    padding-left: 10rem;
+    position: relative;
+}
+header .container{
+    position: relative;
+    
+}
+header .container .left {
+    position: fixed;
+    background-color: var(--bgDark);
+    opacity: .8;
+    top:0;
+    left: 0;
+    right: 0;
+    padding-right: 35rem;
+}
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin: 2rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav .logo{
+    margin-right: 3rem;
+}
+header nav .logo img{
+    height: 3rem;
+    border-radius: 1rem;
+}
+.hero{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.hero .left img{
+    border-radius: 5rem;
+    width: 400px;
+    margin-left: 10rem;
+}
+
+.hero .right{
+    color: var(--white);
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 1.25;
+}
+.hero .right h2{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+.hero .right p{
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.hero .right .btn{
+    color: var(--primary);
+    background-color: var(--bgDark);
+    height: 3rem;
+    width: 13rem;
+    border: 2px solid var(--white);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    transition: all .4s ease;
+}
+
+.hero .right .btn:hover{
+    color: var(--bgDark);
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+/* About Section Style */
+
+.about .container .left{
+    margin: 3rem 3rem;
+    margin-left: 8rem;
+}
+.about .container .left img{
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.about .container .right{
+    margin-left: 5rem;
+    line-height: 2;
+}
+.about .container .right h1 span{
+    color: var(--primary);
+}
+.about .container .right p{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    color: var(--secondary);
+}
+.about .container .right .social{
+    margin-top: 2rem;
+    
+}
+.about .container .right .social a{
+    padding-right: 2rem;
+}
+.about .right .social a img{
+    border-radius: 100%;
+    border: 1px solid var(--bgDark);
+    
+}
+
+/* Project Section Style */
+
+.services{
+    background-color: var(--bgDark);
+}
+
+section.services .services-head{
+    color: var(--primary);
+    text-align: center;
+    padding-top: 3rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.services-head+p{
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+section.services .card-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 3;
+}
+section.services .card-grid .card{
+    background-color: var(--white);
+    margin: 1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    padding: 2rem 3rem;
+    position: relative;
+    transition: all .5s ease;
+}
+
+section.services .card-grid .card h2{
+    margin: 1rem;
+    color: var(--primary);
+}
+section.services .card-grid .card img{
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+}
+section.services .card-grid .card p{
+    color: var(--secondary);
+    line-height: 1.2;
+}
+section.services .card-grid .card:hover{
+    background-color: var(--primary);
+    border-radius: 50px;
+    color: var(--white);
+}
+section.services .card-grid .card:hover h2{
+    color: var(--white);
+}
+section.services .card-grid .card:hover p{
+    color: var(--white);
+}
+
+#contact{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    max-width: 1200px;
+}
+
+.contact-form h2{
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 400;
+    padding-left: 10rem;
+    padding-bottom: 1rem;
+}
+.contact-headng{
+    padding-left: 10rem;
+    margin-top: 2rem;
+}
+.form_input{
+    width: 100%;
+    padding: .5rem 0rem .5rem 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1.5px solid gray;
+}
+.contact-headng label{
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+.contact-headng .submit_button{
+    background-color: var(--primary);
+    cursor: pointer;
+    color: white;
+}
+
+/*  typewriter effect */
+
+.hero .right h1 span{
+    position: relative;
+}
+
+.hero .right h1 span::after{
+    content: "|";
+    color: yellow;
+    position: absolute;
+    background-color: var(--bgDark);
+    right: 0;
+    width: 100%;
+    animation: type 3s infinite alternate-reverse,
+                line 0.3s infinite alternate ;
+}
+
+@keyframes type{
+    100%{
+        width: 0%;
+    }
+}
+@keyframes line{
+    50%{
+        color: var(--bgDark);
+    }
+}
